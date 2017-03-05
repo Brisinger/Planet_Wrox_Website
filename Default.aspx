@@ -9,7 +9,7 @@
         </p>
         <p class="Introduction">
           Feel free to have a <a href="Default.aspx">look around;</a> there are lots of interesting <strong>reviews and concert pictures</strong> to be found here.</p>
-    <p>
-      You can log in.</p>
+    <p class="Introduction">
+      You can <a href="Login.aspx">log in</a> here.</p>
 </asp:Content>
 
