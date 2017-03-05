@@ -5,14 +5,20 @@
 <html>
 <head runat="server">
   <title></title>
+  <link rel="stylesheet" type="text/css" href="../Styles/Styles.css" hreflang="en-us" />
   <asp:ContentPlaceHolder ID="head" runat="server">
   </asp:ContentPlaceHolder>
 </head>
 <body>
   <form id="form1" runat="server">
-    <div>
-      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-      </asp:ContentPlaceHolder>
+    <div id="PageWrapper">
+     <div id="Header"><a href="~/" runat="server">Header goes Here</a></div>
+     <div id="MenuWrapper">Menu goes here</div>
+     <div id="MainContent">
+       <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+     </div>
+     <div id="Sidebar">Side bar goes here</div>
+      <div id="Footer">Footer goes here</div>
     </div>
   </form>
 </body>
