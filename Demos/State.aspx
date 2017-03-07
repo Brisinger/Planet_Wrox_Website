@@ -23,7 +23,7 @@
         <tr>
           <td class="auto-style2">
             <asp:Label ID="Label1" runat="server" Text="Label" ViewStateMode="Enabled"></asp:Label>
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Label1"></asp:Label>
           </td>
           <td>
             <asp:Button ID="SetDate" runat="server" OnClick="SetDate_Click" Text="Set Date" />
