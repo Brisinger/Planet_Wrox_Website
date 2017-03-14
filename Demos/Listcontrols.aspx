@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ListControls.aspx.cs" Inherits="Demos_Listcontrols" %>
+﻿<%@ Page Title="Planet Wrox" Language="C#" AutoEventWireup="true" CodeFile="ListControls.aspx.cs" Inherits="Demos_Listcontrols" %>
 
 <!DOCTYPE html>
 

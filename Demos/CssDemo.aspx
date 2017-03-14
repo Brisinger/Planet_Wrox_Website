@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Title="Planet Wrox" Language="C#" %>
 
 <!DOCTYPE html>
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CalculatorDemo.aspx.cs" Inherits="Demos_CalculatorDemo" EnableViewState="true" ViewStateMode="Disabled" %>
+﻿<%@ Page Title="Planet Wrox" Language="C#" AutoEventWireup="true" CodeFile="CalculatorDemo.aspx.cs" Inherits="Demos_CalculatorDemo" EnableViewState="true" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
