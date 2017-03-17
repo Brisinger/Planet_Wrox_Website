@@ -17,7 +17,7 @@ public partial class MasterPages_Frontend : System.Web.UI.MasterPage
       {
         selectedTheme = preferredTheme.Value;
       }
-      if (string.IsNullOrEmpty(selectedTheme) && ThemeList.Items.FindByValue(selectedTheme) != null)
+      if (!string.IsNullOrEmpty(selectedTheme) && ThemeList.Items.FindByValue(selectedTheme) != null)
       {
         ThemeList.Items.FindByValue(selectedTheme).Selected = true;
       }
