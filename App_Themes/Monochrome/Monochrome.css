@@ -26,6 +26,8 @@ h1 {
 
 #MenuWrapper {
   width: 844px;
+  background-image: url(Images/MenuBackground.jpg);
+  background-repeat: no-repeat;
 }
 
 #MainContent {
