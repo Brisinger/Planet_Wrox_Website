@@ -18,7 +18,7 @@
       </div>
       <div id="Sidebar">
         Select a Theme<br />
-        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
           <asp:ListItem>Monochrome</asp:ListItem>
           <asp:ListItem>DarkGrey</asp:ListItem>
         </asp:DropDownList>
