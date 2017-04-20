@@ -4,30 +4,36 @@
 
 <html>
 <head runat="server">
-  <title></title>
-  <asp:ContentPlaceHolder ID="head" runat="server">
-  </asp:ContentPlaceHolder>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
-  <form id="form1" runat="server">
-    <div id="PageWrapper">
-      <div id="Header"><a href="~/" runat="server"></a></div>
-      <div id="MenuWrapper">
-        <asp:Menu ID="Menu2" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
-        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
-      </div>
-      <div id="MainContent">
-        <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
-      </div>
-      <div id="Sidebar">
-        Select a Theme<br />
-        <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
-          <asp:ListItem>Monochrome</asp:ListItem>
-          <asp:ListItem>DarkGrey</asp:ListItem>
-        </asp:DropDownList>
-      </div>
-      <div id="Footer">Footer goes here</div>
-    </div>
-  </form>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+            <div id="Header"><a href="~/" runat="server"></a></div>
+            <div id="MenuWrapper">
+                <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="false"></asp:Menu>
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
+                    <LevelStyles>
+                        <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+                    </LevelStyles>
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+            </div>
+            <div id="MainContent">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br /><br />
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div id="Sidebar">
+                Select a Themee<br />
+                <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+                    <asp:ListItem>Monochrome</asp:ListItem>
+                    <asp:ListItem>DarkGrey</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div id="Footer">Footer goes here</div>
+        </div>
+    </form>
 </body>
 </html>

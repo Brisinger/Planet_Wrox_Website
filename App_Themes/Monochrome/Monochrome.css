@@ -112,6 +112,35 @@ h2 {
         width: 200px;
     }
 
+ul.level1 {
+    /* Defines the appearance of main menu items. */
+    font-size: 14px;
+    font-weight: bold;
+    height: 19px;
+    line-height: 19px;
+}
+
+    ul.level1 .selected {
+        /* Defines the appearance of active menu items */
+        background-color: #BCD1FE;
+    }
+
+a.level1 {
+    /* Adds some white space to the left of the main menu item text */
+    margin-left: 5px;
+}
+
+a.level2 {
+    /* Defines the appearance of the sub menu items */
+    background-color: #cccccc;
+    padding-left: 8px;
+}
+
+    a.level1:hover, a.level2:hover {
+        /* Defines the hover style for the main and sub items */
+        background-color: #BCD1FE;
+    }
+
 #MainContent {
     /*
     Defines the main content area. The #MainContent element has a minimum height of 500 pixels, but can grow if necessary.
