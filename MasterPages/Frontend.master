@@ -13,7 +13,7 @@
     <div id="PageWrapper">
       <div id="Header"><a href="~/" runat="server"></a></div>
       <div id="MenuWrapper">
-        <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+        <asp:Menu ID="Menu2" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
       </div>
       <div id="MainContent">
