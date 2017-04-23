@@ -9,6 +9,6 @@ public partial class Demos_Source : BasePage
 {
   protected void Page_Load(object sender, EventArgs e)
   {
-    Response.Redirect("Target.aspx?Test=SomeValue");
+    Server.Transfer("Target.aspx?Test=SomeValue");
   }
 }
