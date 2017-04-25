@@ -1,6 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Frontend.master.cs" Inherits="MasterPages_Frontend" %>
 
-<%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix="uc1" %>
 
 <!DOCTYPE html>
 
@@ -37,8 +36,8 @@
         </asp:DropDownList>
         <br />
         <br />
+        <Wrox:Banner ID="Banner1" runat="server" />
         <br />
-        <uc1:Banner ID="Banner1" runat="server" />
       </div>
       <div id="Footer">Footer goes here</div>
     </div>
