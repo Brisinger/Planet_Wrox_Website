@@ -102,6 +102,10 @@ h1 {
   padding-top: 10px;
 }
 
+img {
+  border: none;
+}
+
 #Footer {
   /*
     The footer is positioned below all other content.

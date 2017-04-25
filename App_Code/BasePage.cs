@@ -15,6 +15,14 @@ public class BasePage : System.Web.UI.Page
       throw new Exception("Page title cannot be\"Untitled Page\" or an empty string.");
     }
   }
+  private void Page_PreInit(object sender, EventArgs e)
+  {
+    HttpCookie preferredTheme = Request.Cookies.Get("preferredTheme");
+    if (preferredTheme != null)
+    {
+      Page.Theme = preferredTheme.Value;
+    }
+  }
   public BasePage()
   {
     //
