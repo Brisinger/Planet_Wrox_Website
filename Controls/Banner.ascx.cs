@@ -7,8 +7,41 @@ using System.Web.UI.WebControls;
 
 public partial class Controls_Banner : System.Web.UI.UserControl
 {
-  protected void Page_Load(object sender, EventArgs e)
-  {
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        HorizontalPanel.Visible = false;
+        VerticalPanel.Visible = false;
 
-  }
+        switch (DisplayDirection)
+        {
+            case Direction.Horizontal:
+                HorizontalPanel.Visible = true;
+                HorizontalLink.HRef = NavigateUrl;
+                break;
+            case Direction.Vertical:
+                VerticalPanel.Visible = true;
+                VerticalLink.HRef = NavigateUrl;
+                break;
+        }
+    }
+    public Direction DisplayDirection { get; set; }
+    public String NavigateUrl
+    {
+        get
+        {
+            object _navigateUrl = ViewState["NavigateUrl"];
+            if (_navigateUrl != null)
+            {
+                return (String)_navigateUrl;
+            }
+            else
+            {
+                return "http://p2p.wrox.com";//Return a default Url.
+            }
+        }
+        set
+        {
+            ViewState["NavigateUrl"] = value;
+        }
+    }
 }
