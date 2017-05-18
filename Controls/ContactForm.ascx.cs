@@ -11,4 +11,14 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
   {
 
   }
+
+  protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+  {
+    if (!String.IsNullOrEmpty(PhoneBusiness.Text) || !String.IsNullOrEmpty(PhoneHome.Text))
+    {
+      args.IsValid = true;
+    }
+    else
+      args.IsValid = false;
+  }
 }
