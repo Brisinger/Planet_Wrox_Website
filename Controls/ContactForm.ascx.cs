@@ -33,7 +33,7 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
             string mailBody = File.ReadAllText(fileName);
 
             mailBody = mailBody.Replace("##Name##", Name.Text);
-            mailBody = mailBody.Replace("##Email##", String.Format("{0,44}", EmailAddress.Text));
+            mailBody = mailBody.Replace("##Email##", String.Format("{0,42}", EmailAddress.Text));
             mailBody = mailBody.Replace("##HomePhone##", PhoneHome.Text);
             mailBody = mailBody.Replace("##BusinessPhone##", PhoneBusiness.Text);
             mailBody = mailBody.Replace("##Comments##", Comments.Text);
