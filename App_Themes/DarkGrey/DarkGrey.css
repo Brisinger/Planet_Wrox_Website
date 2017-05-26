@@ -93,7 +93,17 @@ h1 {
     padding: 10px;
     float: left;
 }
-
+.PleaseWait {
+  /* The UpdateProgress shows the content styled by the rules defined in this class, to show the user that page is performing 
+    some action once the user submits the form. The actions is performed without any page-flicker.
+  */
+  height: 32px;
+  width: 500px;
+  background-image: url(Images/PleaseWait.gif);
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  line-height: 32px;
+}
 #Sidebar {
     /*
     The Sidebar is positioned absolutely at the right of the page.
