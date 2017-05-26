@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using System.Threading;
 using System.IO; // Provides access to the File class for reading the file
 using System.Net.Mail; // Provides access to the various mail related classes
 
@@ -50,6 +50,7 @@ public partial class Controls_ContactForm : System.Web.UI.UserControl
 
             Message.Visible = true;
             FormTable.Visible = false;
+            Thread.Sleep(5000);
         }
     }
 }
