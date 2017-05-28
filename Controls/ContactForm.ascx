@@ -104,7 +104,7 @@
         <asp:Label ID="Message" runat="server" Text="Message Sent" Visible="False" />
     </ContentTemplate>
 </asp:UpdatePanel>
-<asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1" DisplayAfter="500">
+<asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1" DisplayAfter="500" DynamicLayout="True">
     <ProgressTemplate>
         <div class="PleaseWait">
             Please wait...
