@@ -1,0 +1,9 @@
+﻿div#list-menu {
+  width: 200px;
+  float: left;
+}
+
+div#content {
+  width: 750px;
+  float: left;
+}

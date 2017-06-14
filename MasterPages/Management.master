@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Management.master.cs" Inherits="MasterPages_Management" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title></title>
+  <link href="~/Styles/style.css" rel="stylesheet" lang="en-us" />
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div>
+      <div id="list-menu">
+        <ul>
+          <li><a href="~/Management/Default.aspx" runat="server">Management Home</a></li>
+          <li><a href="~/Management/Genres.aspx" runat="server">Manage Genre</a></li>
+          <li><a href="~/Management/Reviews.aspx" runat="server">Manage Reviews</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+  </form>
+</body>
+</html>
