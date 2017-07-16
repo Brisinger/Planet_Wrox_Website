@@ -7,3 +7,6 @@ div#content {
   width: 750px;
   float: left;
 }
+.ErrorMessage {
+  color: red;
+}

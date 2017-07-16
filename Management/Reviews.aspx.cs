@@ -7,6 +7,18 @@ using System.Web.UI.WebControls;
 
 public partial class Management_Reviews : System.Web.UI.Page
 {
+  protected string GetBooleanText(object booleanValue)
+  {
+    bool authorized = (bool)booleanValue;
+    if (authorized)
+    {
+      return "Yes";
+    }
+    else
+    {
+      return "No";
+    }
+  }
   protected void Page_Load(object sender, EventArgs e)
   {
 
